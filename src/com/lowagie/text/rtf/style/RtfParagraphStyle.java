@@ -271,6 +271,19 @@ public class RtfParagraphStyle extends RtfFont {
         super(null, new RtfFont(fontName, fontSize, fontStyle, fontColor));
         this.styleName = styleName;
     }
+
+    /**
+     * Constructs a new RtfParagraphStyle with the given attributes.
+     * 
+     * @since 2.1.7-mod
+     * 
+     * @param styleName The name of this RtfParagraphStyle.
+     * @param font The Font to use as a base
+     */
+    public RtfParagraphStyle(String styleName, Font font) {
+        super(null, font);
+        this.styleName = styleName;
+    }
     
     /**
      * Constructs a new RtfParagraphStyle that is based on an existing RtfParagraphStyle.
